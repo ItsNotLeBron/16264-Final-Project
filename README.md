@@ -3,26 +3,6 @@
 > A modular pipeline for capturing, remembering, and inferring the location of personal objects.
 
 
-
-## Table of Contents
-
-1. [Overview](#overview)  
-2. [Motivation](#motivation)  
-3. [Architecture](#architecture)  
-4. [Modules](#modules)  
-   - [Camera](#camera-module)  
-   - [Analyzer (Black-box)](#analyzer-module)  
-   - [Memory](#memory-module)  
-   - [Inference](#inference-module)  
-   - [Chat Interface](#chat-interface)  
-5. [Installation](#installation)  
-6. [Usage](#usage)  
-7. [Demo & Examples](#demo--examples)  
-8. [Configuration](#configuration)  
-9. [Contributing](#contributing)  
-10. [License](#license)
-
-
 ## Overview
 
 This goal of this project was to provide a modular object memory system for humanoid robots, enabling them to detect and remember the locations of personal items over time. It captures live video, logs each sighting (with timestamp and location), and builds a temporal model of where objects tend to be. When queried—either programmatically or via a ChatGPT interface—it can answer questions like:
@@ -226,4 +206,8 @@ OPENAI_API_KEY=<my api key>
 ## Running
 
 Once the setup is complete you can now run the test scripts. 
+
+## Recreating this Project
+
+Copy the structure and code...
 
