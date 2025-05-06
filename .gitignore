@@ -1,2 +1,5 @@
 .venv
+.env
 __pycache__
+memory_logs_chat_demo
+memory_logs_inference_demo

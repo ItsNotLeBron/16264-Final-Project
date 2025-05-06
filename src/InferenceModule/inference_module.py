@@ -109,7 +109,7 @@ class ZoneModel:
 
 class TimeModel:
     """
-    Stores P(zone | hour) probabilities and centroids.
+    Stores P(being in zone | hour) probabilities and centroids.
     """
     def __init__(self):
         # hour -> zone -> probability
@@ -137,11 +137,11 @@ class InferenceModule:
 
     def train_time_model(self, label: str) -> None:
         """
-        Build clustering and P(zone|hour) from memory logs.
+        Build clustering and P(being in zone | hour) from memory logs.
         """
         events = self.mem.get_sightings(label)
         points = [(ev['location'][0], ev['location'][1]) for ev in events]
-        # 1) Cluster points
+        # Cluster points
         self.zoner.fit(points)
         # Prepare count structure: hour -> zone -> count
         counts: Dict[int, Dict[str, int]] = {h: {} for h in range(24)}
